@@ -7,6 +7,11 @@ from ._base_dataset import _BaseDataset
 from .. import utils
 from .. import _timing
 from ..utils import TrackEvalException
+np.float = float    
+np.int = int   #module 'numpy' has no attribute 'int'
+np.object = object    #module 'numpy' has no attribute 'object'
+np.bool = bool    #module 'numpy' has no attribute 'bool'
+
 
 
 class MotChallenge2DBox(_BaseDataset):
